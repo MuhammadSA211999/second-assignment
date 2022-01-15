@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Niconne&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&family=Roboto+Slab:wght@300&family=Teko:wght@300&display=swap');
+body{
+    background-color: #aaaaaa;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #ffffff;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: 700;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+/* main section  */
+/* ------------------ */
+main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.camera-head{
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    width: 350px;
+    height: 270px;
+    margin-left: 120px;
+    margin-right: 150px;
+}
+h2{
+    font-size: 22px;
+}
+.headb{
+    text-decoration: none;
+    background-color: #ff146a;
+    color: white;
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 8px;
+}
+.camera{
+    width: 350%px;
+    height: 390px;
+    margin-right: 165px;
+    background-image: url(images/Circle\ design.svg);
+}
+.camera:hover{
+    transform: rotate(360deg);
+    transition: transform 3s ease-in-out;
+}
+.camera img{
+    width: 300px;
+    height: 350px;
+}
+/* logo section */
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom:0px
+    width: 700px;
+    height: 110px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+.logo-margin{
+    margin-left: 20px;
+}
+/* popular collection */
+.popularc{
+    margin-top: 0px;
+}
+.line{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.pop-co{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 2px;
+    width: 1020px;
+    height: 1500px;
+    margin-bottom: 0%;
+}
+.item{
+    width: 270px;
+    height: 400px;
+}
+.photo{
+    margin-bottom: 0px;
+}
+
+.photo img{
+    width: 220px;
+    height: 190px;
+}
+.detail{
+    margin-top: 0px;
+}
+.item-name{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 25px;
+}
+.ratings span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.price{
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.advantage{
+    width: 210px;
+    font-size: 1.102em;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.fa-star{
+    color: #FB8200;
+}
+.fas.gd{
+    color: #FB8200;
+
+}
+.see-more{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: azure;
+    margin-top: 0px;
+    border-radius: 17px;
+    background-color:#ff146a ;
+}
+/* extra design */
+.extra{
+    justify-content: center;
+    margin-right: 120px;
+}
+.extra h2{
+    text-align: center;
+}
+.detailn{
+    margin-left: 120px;
+    margin-right: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;    
+}
+.program img{
+    border-radius: 5px;
+}
+.program{
+    margin-right: 15px;
+}
+.harvard img{
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.join{
+    margin-bottom: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 12px;
+    color: beige;
+    background-color: #E02C6D;
+}
+
+.detailn img{
+    width:120%;
+}
+.info{
+    font-weight: 700;
+}
+/* fotter section */
+.extra{
+    margin-bottom: 15px;
+}
+.fot{
+    width: 100%;
+    color: beige;
+    background-color: #0a0826;
+    margin-top: 15px;
+}
+.fottet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* media quwries  */
+/* -------------- */
+/* for mobile */
+@media only screen and (max-width:688px) {
+    header {
+        width:100%;
+    }
+       nav{
+           width: 100%;
+       }
+   .camera-head{
+       margin-left: 80px;
+       width: 60%;
+       flex-direction: column;
+       align-items: center;
+   }
+   .bb{
+       display: none;
+   }
+   .photo{
+       margin-top: 20px;
+   }
+    .headb{
+        margin-bottom: 20px;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pop-co{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item{
+        height: 100%;
+    }
+    .extra{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .second-hd{
+        margin-left: 100px;
+    }
+
+    .detailn{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .detailn img{
+           width: 100%;
+    }
+    
+}
+/* media for tablet */
+@media only screen and (min-width:688px) and (max-width:991) {
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .camera-head{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .logo{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+.line{
+    text-align: center;
+   }
+.pop-co{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .extra{
+        width: 100%;
+
+    }
+    .second-hd{
+        text-align: center;
+    }
+    .detailn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fot{
+        width: 100%;
+        height: 100%;
+    }
+
+    }
